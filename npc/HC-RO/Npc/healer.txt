@@ -1,0 +1,100 @@
+-	script	healer_main	FAKE_NPC,{
+	
+//-------------------------------------
+// Config Npc : ตั้งค่า ใช้งานที่นี้
+//-------------------------------------
+	set .@Price,0;
+	set .@Delay,10;	
+	set .@BaseLevel,70;
+//-------------------------------------
+	mes "^FF0000==== H e a l e r ====^000000";
+	mes "ฉันมีหน้าที่อำนวยความสะดวก";
+	mes "ให้กับผู้เล่นค่อยสนับสนุนช่วยเหลือ";
+	mes "คุณต้องการใช้บริการหรือไม่ ?";
+	switch(select("~ ใช่ต้องการ ช่วยฉันหน่อย.:^FF0000~ ยกเลิกการสนทนา^000000"))
+	{
+		case 1:
+			close2;
+			goto Healer_Setting;
+		end;
+		
+		case 2:
+		end;
+	}
+
+Healer_Setting:
+	
+	if ( gettimetick(2) - @healab < .@Delay ) { message strcharinfo(0),"[ แจ้งเตือน ! ] กรุณา เว้นระยะเวลา 10 วินาที และ ลองกดรับใหม่อีกครั้ง"; end;}
+	set @healab,gettimetick(2);
+	// ตั้งค่า effect & progress
+	sleep2 250;
+	specialeffect2 42;
+	set Zeny, Zeny-.@Price;
+	emotion ( !rand(5) )?HT_ANGER:ET_HUK;
+	// ตั้งค่า ซ่อมอุปกรณ์
+	set .@checkitem,1;
+		while (1) {
+			if (getbrokenid(.@checkitem) == 0) {
+				break;
+			}
+			set .@checkitem,.@checkitem+1;
+		}
+		set .@checkitem,.@checkitem-1;
+
+			set .@checkitem2,1;
+			while (1) {
+				if (getbrokenid(.@checkitem2) == 0) {
+					break;
+				}
+				set .@checkitem2,.@checkitem2+1;
+			}
+			set .@checkitem2,.@checkitem2-1;
+			if (.@checkitem == .@checkitem2) {
+				while (.@checkitem) {
+					repair(.@checkitem);
+					set .@checkitem,.@checkitem-1;
+					message strcharinfo(0),"[ แจ้งเตือน ! ] อุปกรณ์ได้รับการซ่อมเรียบร้อยแล้ว!";
+				}
+			}
+	// ตั้งค่า ส่องไอเท็ม
+	setarray .@Identify[0],0,0;
+	getinventorylist;
+	for(set .@i,0; .@i<@inventorylist_count; set .@i,.@i+1) {
+		if(@inventorylist_identify[.@i]) { continue; }
+		delitem2 @inventorylist_id[.@i],1,0,0,0,0,0,0,0;
+		getitem @inventorylist_id[.@i],1;
+		setarray .@Identify[0],.@Identify[0]+1,.@Identify[1]+1000;
+	}
+
+//	sc_start SC_STRFood,1000*60*5,5;
+//	sc_start SC_AGIFood,1000*60*5,5;
+//	sc_start SC_INTFood,1000*60*5,5;
+//	sc_start SC_DEXFood,1000*60*5,5;
+//	sc_start SC_LUKFood,1000*60*5,5;
+	sc_start SC_BLESSING,1000*60*15,10;
+	sc_start SC_INCREASEAGI,1000*60*15,10;
+	sc_start SC_MAGNIFICAT,1000*60*15,10;
+//	sc_start SC_GLORIA,1000*60*15,10;
+//	sc_start4 SC_POEMBRAGI,200*60*5,5,70,90,10;
+	sc_start4 SC_SERVICE4U,200*60*5,5,40,40,1;
+	percentheal 100,100;
+	// End Status
+	sc_end SC_Poison;
+	sc_end SC_Freeze;
+	sc_end SC_Sleep;
+	sc_end SC_Stan;
+	sc_end SC_Stun;
+	sc_end SC_Stone;
+	sc_end SC_Silence;
+	sc_end SC_Blind;
+	sc_end SC_Bleeding;
+	sc_end SC_Confusion;
+	sc_end SC_Curse;
+	sc_end SC_Hallucination;
+	sc_end SC_ORCISH;
+	sc_end SC_Xmas;
+	end;
+}
+
+//==============================================
+prontera,160,196,4	duplicate(healer_main)	Healer#30	569

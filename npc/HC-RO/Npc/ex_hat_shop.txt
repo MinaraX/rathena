@@ -1,0 +1,173 @@
+prontera,128,214,5	script	รับซื้อของบอส	615,{
+
+
+
+mes "^3EA99Fสวัสดี^000000 ^48CCCD" + strcharinfo(0) +"^000000";
+mes "^FF0000[ระบบรับซื้อของบอส]^000000";
+mes "^FF0000เลือกว่าคุณต้องการขายไอเทมชิ้นไหน.^000000";
+mes "^FF0000หากตัดสินใจขายแล้วไม่รับคืนนะ^000000";
+next;
+menu "Golden Gear ^FF000020 Cash Coin^000000",SS1,"Sphinx Hat ^FF000020 Cash Coin^000000",SS2,"Corsair ^FF000020 Cash Coin^000000",SS3,"Jewel Crown ^FF000020 Cash Coin^000000",SS4,"Coronet ^FF000020 Cash Coin^000000",SS5,"Ulle's Cap ^FF000020 Cash Coin^000000",SS6,"Majestic Goat ^FF000020 Cash Coin^000000",SS7,"Spiky Band ^FF000020 Cash Coin^000000",SS8,"Grand Circlet ^FF000020 Cash Coin^000000",SS9,"Crown ^FF000020 Cash Coin^000000",SS10,"Tiara ^FF000020 Cash Coin^000000",SS11,"Pipe ^FF000020 Cash Coin^000000",SS12,"- ยกเลิก",SS0;                                    
+
+SS1:
+mes "^FF0000หมวกบอสแลกแคช^000000";
+mes "เจ้ามี หมวกบอส ที่จะใช้แลกรึป่าว";
+mes "ถ้าไม่มี เจ้าควรไปหามานะ";
+next;
+if (countitem(2246) < 1) goto SS0;	//ไอเทมที่ใช้แลก  //ไม่มียกเลิกเอง
+mes "^FF0000หมวกบอสแลกแคช^000000";
+mes "^3EA99Fคุณ^000000 ^48CCCD" + strcharinfo(0) +"^000000ได้แลกไอเทมสำเร็จ";
+next;
+delitem 2246,1;			//ลบไอเทมที่ใช้แลก
+atcommand "@item 41002";	//ไอเทมที่ได้รับ
+close;
+
+SS2:
+mes "^FF0000หมวกบอสแลกแคช^000000";
+mes "เจ้ามี หมวกบอส ที่จะใช้แลกรึป่าว";
+mes "ถ้าไม่มี เจ้าควรไปหามานะ";
+next;
+if (countitem(5053) < 1) goto SS0;
+mes "^FF0000หมวกบอสแลกแคช^000000";
+mes "^3EA99Fคุณ^000000 ^48CCCD" + strcharinfo(0) +"^000000ได้แลกไอเทมสำเร็จ";
+next;
+delitem 5053,1;
+atcommand "@item 41002";
+close;
+
+SS3:
+mes "^FF0000หมวกบอสแลกแคช^000000";
+mes "เจ้ามี หมวกบอส ที่จะใช้แลกรึป่าว";
+mes "ถ้าไม่มี เจ้าควรไปหามานะ";
+next;
+if (countitem(5019) < 1) goto SS0;
+mes "^FF0000หมวกบอสแลกแคช^000000";
+mes "^3EA99Fคุณ^000000 ^48CCCD" + strcharinfo(0) +"^000000ได้แลกไอเทมสำเร็จ";
+next;
+delitem 5019,1;
+atcommand "@item 41002";
+close;
+
+SS4:
+mes "^FF0000หมวกบอสแลกแคช^000000";
+mes "เจ้ามี หมวกบอส ที่จะใช้แลกรึป่าว";
+mes "ถ้าไม่มี เจ้าควรไปหามานะ";
+next;
+if (countitem(5002) < 1) goto SS0;
+mes "^FF0000หมวกบอสแลกแคช^000000";
+mes "^3EA99Fคุณ^000000 ^48CCCD" + strcharinfo(0) +"^000000ได้แลกไอเทมสำเร็จ";
+next;
+delitem 5002,1;
+atcommand "@item 41002";
+close;
+
+SS5:
+mes "^FF0000หมวกบอสแลกแคช^000000";
+mes "เจ้ามี หมวกบอส ที่จะใช้แลกรึป่าว";
+mes "ถ้าไม่มี เจ้าควรไปหามานะ";
+next;
+if (countitem(2249) < 1) goto SS0;
+mes "^FF0000หมวกบอสแลกแคช^000000";
+mes "^3EA99Fคุณ^000000 ^48CCCD" + strcharinfo(0) +"^000000ได้แลกไอเทมสำเร็จ";
+next;
+delitem 2249,1;
+atcommand "@item 41002";
+close;
+
+SS6:
+mes "^FF0000หมวกบอสแลกแคช^000000";
+mes "เจ้ามี หมวกบอส ที่จะใช้แลกรึป่าว";
+mes "ถ้าไม่มี เจ้าควรไปหามานะ";
+next;
+if (countitem(5123) < 1) goto SS0;
+mes "^FF0000หมวกบอสแลกแคช^000000";
+mes "^3EA99Fคุณ^000000 ^48CCCD" + strcharinfo(0) +"^000000ได้แลกไอเทมสำเร็จ";
+next;
+delitem 5123,1;
+atcommand "@item 41002";
+close;
+
+SS7:
+mes "^FF0000หมวกบอสแลกแคช^000000";
+mes "เจ้ามี หมวกบอส ที่จะใช้แลกรึป่าว";
+mes "ถ้าไม่มี เจ้าควรไปหามานะ";
+next;
+if (countitem(2256) < 1) goto SS0;
+mes "^FF0000หมวกบอสแลกแคช^000000";
+mes "^3EA99Fคุณ^000000 ^48CCCD" + strcharinfo(0) +"^000000ได้แลกไอเทมสำเร็จ";
+next;
+delitem 2256,1;
+atcommand "@item 41002";
+close;
+
+SS8:
+mes "^FF0000หมวกบอสแลกแคช^000000";
+mes "เจ้ามี หมวกบอส ที่จะใช้แลกรึป่าว";
+mes "ถ้าไม่มี เจ้าควรไปหามานะ";
+next;
+if (countitem(2258) < 1) goto SS0;
+mes "^FF0000หมวกบอสแลกแคช^000000";
+mes "^3EA99Fคุณ^000000 ^48CCCD" + strcharinfo(0) +"^000000ได้แลกไอเทมสำเร็จ";
+next;
+delitem 2258,1;
+atcommand "@item 41002";
+close;
+
+SS9:
+mes "^FF0000หมวกบอสแลกแคช^000000";
+mes "เจ้ามี หมวกบอส ที่จะใช้แลกรึป่าว";
+mes "ถ้าไม่มี เจ้าควรไปหามานะ";
+next;
+if (countitem(5007) < 1) goto SS0;
+mes "^FF0000หมวกบอสแลกแคช^000000";
+mes "^3EA99Fคุณ^000000 ^48CCCD" + strcharinfo(0) +"^000000ได้แลกไอเทมสำเร็จ";
+next;
+delitem 5007,1;
+atcommand "@item 41002";
+close;
+
+SS10:
+mes "^FF0000หมวกบอสแลกแคช^000000";
+mes "เจ้ามี หมวกบอส ที่จะใช้แลกรึป่าว";
+mes "ถ้าไม่มี เจ้าควรไปหามานะ";
+next;
+if (countitem(2235) < 1) goto SS0;
+mes "^FF0000หมวกบอสแลกแคช^000000";
+mes "^3EA99Fคุณ^000000 ^48CCCD" + strcharinfo(0) +"^000000ได้แลกไอเทมสำเร็จ";
+next;
+delitem 2235,1;
+atcommand "@item 41002";
+close;
+
+SS11:
+mes "^FF0000หมวกบอสแลกแคช^000000";
+mes "เจ้ามี หมวกบอส ที่จะใช้แลกรึป่าว";
+mes "ถ้าไม่มี เจ้าควรไปหามานะ";
+next;
+if (countitem(2234) < 1) goto SS0;
+mes "^FF0000หมวกบอสแลกแคช^000000";
+mes "^3EA99Fคุณ^000000 ^48CCCD" + strcharinfo(0) +"^000000ได้แลกไอเทมสำเร็จ";
+next;
+delitem 2234,1;
+atcommand "@item 41002";
+close;
+
+SS12:
+mes "^FF0000หมวกบอสแลกแคช^000000";
+mes "เจ้ามี หมวกบอส ที่จะใช้แลกรึป่าว";
+mes "ถ้าไม่มี เจ้าควรไปหามานะ";
+next;
+if (countitem(2268) < 1) goto SS0;
+mes "^FF0000หมวกบอสแลกแคช^000000";
+mes "^3EA99Fคุณ^000000 ^48CCCD" + strcharinfo(0) +"^000000ได้แลกไอเทมสำเร็จ";
+next;
+delitem 2268,1;
+atcommand "@item 41002";
+close;
+
+SS0:
+close;
+
+}
+
+///===========================================///

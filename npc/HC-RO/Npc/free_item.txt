@@ -1,0 +1,11 @@
+prontera,166,170,3	script	freeitem	508,{
+	if(#jeakKongTorId == 0){
+		getitem 501,150; getitem 505,150; getitem 14545,15; getitem 14592,15;
+		#jeakKongTorId = 1;
+		close;
+	}else{
+		mes "[ ·®°‰Õ‡∑Á¡ø√’ ]";
+		mes "∑Ë“π°¥√—∫‰ª·≈È«";
+		close;
+	}
+}

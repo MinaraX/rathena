@@ -13738,6 +13738,13 @@
 
 //100052,Enchant_Stone_Box19,Costume Enchantment Stone Box 19,2,10,,10,,,,0,0xFFFFFFFF,63,2,,,1,,,{ getgroupitem(IG_Enchant_Stone_Box19); },{},{}
 
+
+// HC-RO Item
+50001,50_Cash_Coin,50 Cash Coin,11,20,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ callfunc "Cashcoins1"; },{},{}
+50002,100_Cash_Coin,100 Cash Coin,11,20,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ callfunc "Cashcoins2"; },{},{}
+50003,500_Cash_Coin,500 Cash Coin,11,20,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ callfunc "Cashcoins3"; },{},{}
+50004,5_Cash_Coin,5 Cash Coin,11,20,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ callfunc "Cashcoins4"; },{},{}
+
 //===================================================================
 // New Warlock Spell Books
 //===================================================================

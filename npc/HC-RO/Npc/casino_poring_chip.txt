@@ -1,0 +1,36 @@
+/*
+=================== TERMS OF SERVICES. ===================
+1. ALL RIGHT RESERVED RE-SELLER OR SHARE SCRIPT TO PUBLISH.
+2. BUT YOU RE-SELLER OR SHARE SCRIPT WITH OUT UNAUTHORIZRD
+   I WILL ALL CANCEL MY SUPPORT FOR YOU.
+3. MAINTENANCE SCRIPTS WILL BE FREE SERVICES.
+4. I WILL NOT KEEP ANY INFORMATIONS FROMS YOU SERVER THAT
+   YOU SEND FOR ME.
+5. I HOPE YOU WILL ALL ACCEPT TERMS OF SERVICES.
+==========================================================
+Script. Poring Coin																					 
+Create By. [Eddga-Studio]
+Translator By. Eddga Studio
+Bug Report. Dollaporn Naraphan [ FB ]																					 
+Contact Us. Dollaporn Naraphan [ FB ]																					 																				 
+==========================================================
+*/
+prontera,194,139,4	script	Poring Coin	564,{
+	mes "[ Poring Shop ]";
+	mes "คุณสามารถแลกเปลี่ยน";
+	mes "===================";
+	mes "คุณต้องการทำรายการหรือไม่";
+	next;
+	switch(select("~ แลกของรางวัล:~ ยกเลิกการสนทนา")) {
+		
+		case 1:
+			callfunc "funcporingshop",1;
+		close;
+		
+		case 2:
+			mes "[ Poring Coin ]";
+			mes "แล้วพบกันใหม่ อีกครั้ง....";
+		close;
+	
+	}
+}

@@ -683,6 +683,7 @@ struct Battle_Config
 	int ping_timer_interval;
 	int ping_time;
 	int show_skill_scale;
+	int feature_refineui;
 	int achievement_mob_share;
 	int slave_stick_with_master;
 	int at_logout_event;

@@ -1,0 +1,109 @@
+function	script	OCPBOX01	{
+	
+	setarray .i1[1],12411,12412,14592; // ไอเท็มทั่วไป
+	set .i1rand,rand(1,3); // ระบุบจำนวนไอเท็มด้วย
+	
+	setarray .i2[1],6240,6241; // ไอเท็มแร่
+	set .i2rand,rand(1,2); // ระบุบจำนวนไอเท็มด้วย
+	
+	setarray .i3[1],19102,19114,18543,18877,19083,18799,18746,18760,18616,18564,5978,15072,1746,1837,13088,13412,13413,28910,20799,28386,28394,18756,2365,2192,2743,2115,1420; // ไอเท็มโครตแร่
+	set .i3rand,rand(1,27); // ระบุบจำนวนไอเท็มด้วย
+	
+	set .chance, rand(100);
+
+		// Rate ไอเท็มโครตแร่ 3%	
+		if (.chance < 8){
+		getitem .i3[.i3rand],1;
+		announce "["+strcharinfo(0)+"] ได้รับ ["+getitemname(.i3[.i3rand])+"] จาก Overseas Care Package I.",0;
+		end;
+		} 
+
+		// Rate แร่ไอเท็ม 15%
+		else if (.chance < 10){
+		getitem .i2[.i2rand],1;
+		announce "["+strcharinfo(0)+"] ได้รับ ["+getitemname(.i2[.i2rand])+"] จาก Overseas Care Package I.",0;
+		end;
+		} 
+
+		// Rate ไอเท็มทั่วไป
+		else {
+		getitem .i1[.i1rand],1;
+		end; 
+		}
+		
+	end;
+}
+
+
+function	script	OCP_BOX_02	{
+	
+	setarray .i1[1],14545,14592,528,607,610,715,717,996,993; // ไอเท็มทั่วไป
+	set .i1rand,rand(1,9); // ระบุบจำนวนไอเท็มด้วย
+	
+	setarray .i2[1],6292,6291,6240,6241; // ไอเท็มแร่
+	set .i2rand,rand(1,4); // ระบุบจำนวนไอเท็มด้วย
+	
+	setarray .i3[1],5531,5933,5500,18543,18787,18746,18616,18564,5878,19112,19048,15103,1746,13088,16022,18813,1665,1672,1835,13412,13413,2196,20712,22058,28411,2985,28410,20797,2371,2935,2387,2440,2744; // ไอเท็มโครตแร่
+	set .i3rand,rand(1,33); // ระบุบจำนวนไอเท็มด้วย
+	
+	set .chance, rand(100);
+
+		// Rate ไอเท็มโครตแร่ 3%	
+		if (.chance < 8){
+		getitem .i3[.i3rand],1;
+		announce "["+strcharinfo(0)+"] ได้รับ ["+getitemname(.i3[.i3rand])+"] จาก Overseas Care Package II.",0;
+		end;
+		} 
+
+		// Rate แร่ไอเท็ม 15%
+		else if (.chance < 10){
+		getitem .i2[.i2rand],1;
+		announce "["+strcharinfo(0)+"] ได้รับ ["+getitemname(.i2[.i2rand])+"] จาก Overseas Care Package II.",0;
+		end;
+		} 
+
+		// Rate ไอเท็มทั่วไป
+		else {
+		getitem .i1[.i1rand],1;
+		end; 
+		}
+		
+	end;
+}
+
+
+function	script	OCPBOX03	{
+	
+	setarray .i1[1],14545,14592,528,607,610,715,717,996,993; // ไอเท็มทั่วไป
+	set .i1rand,rand(1,9); // ระบุบจำนวนไอเท็มด้วย
+	
+	setarray .i2[1],6292,6291,6240,6241; // ไอเท็มแร่
+	set .i2rand,rand(1,4); // ระบุบจำนวนไอเท็มด้วย
+	
+	setarray .i3[1],19079,19125,5916,18787,18670,19083,18937,15106,15103,15140,13017,1665,16024,2184,2191,20783,20778,15071,20728,22103,22042,22060,2702,2864,28305,28353,15169,1649,2195,20753,22069,22104,1646,2192,2743; // ไอเท็มโครตแร่
+	set .i3rand,rand(1,35); // ระบุบจำนวนไอเท็มด้วย
+	
+	set .chance, rand(100);
+
+		// Rate ไอเท็มโครตแร่ 3%	
+		if (.chance < 3){
+		getitem .i3[.i3rand],1;
+		announce "["+strcharinfo(0)+"] ได้รับ ["+getitemname(.i3[.i3rand])+"] จาก Overseas Care Package II.",0;
+		end;
+		} 
+
+		// Rate แร่ไอเท็ม 15%
+		else if (.chance < 5){
+		getitem .i2[.i2rand],1;
+		announce "["+strcharinfo(0)+"] ได้รับ ["+getitemname(.i2[.i2rand])+"] จาก Overseas Care Package II.",0;
+		end;
+		} 
+
+		// Rate ไอเท็มทั่วไป
+		else {
+		getitem .i1[.i1rand],1;
+		end; 
+		}
+		
+	end;
+}

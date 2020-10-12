@@ -1,0 +1,87 @@
+function	script	Cashcoins1	{
+.@item = 50001;
+.@rate = 50;
+
+.@countitem = countitem( .@item );
+mes "ระบบแลก Cash Point ด้วย Coin";
+mes "เมื่อท่านกดแลกแล้ว Point จะเข้าตัวทันที";
+mes "สามารถเช็ดได้ที่ Cash Shop";
+mes "=================";
+mes "ต้องการแลก "+.@countitem+" x "+getitemname( .@item )+" เป็น "+( .@countitem * .@rate )+" Point หรือไม่ ?";
+next;
+if( .@countitem )
+	if( select( "YES","Cancel" ) == 1 ){
+		delitem .@item,.@countitem;
+		#CASHPOINTS = #CASHPOINTS + ( .@countitem * .@rate );
+		mes "ระบบแลก Cash Point ด้วย Coin";
+		mes "=================";
+		mes "เรียบร้อย~";
+	}
+close;
+}
+
+function	script	Cashcoins2	{
+.@item = 50002;
+.@rate = 100;
+
+.@countitem = countitem( .@item );
+mes "ระบบแลก Cash Point ด้วย Coin";
+mes "เมื่อท่านกดแลกแล้ว Point จะเข้าตัวทันที";
+mes "สามารถเช็ดได้ที่ Cash Shop";
+mes "=================";
+mes "ต้องการแลก "+.@countitem+" x "+getitemname( .@item )+" เป็น "+( .@countitem * .@rate )+" Point หรือไม่ ?";
+next;
+if( .@countitem )
+	if( select( "YES","Cancel" ) == 1 ){
+		delitem .@item,.@countitem;
+		#CASHPOINTS = #CASHPOINTS + ( .@countitem * .@rate );
+		mes "ระบบแลก Cash Point ด้วย Coin";
+		mes "=================";
+		mes "เรียบร้อย~";
+	}
+close;
+}
+
+function	script	Cashcoins3	{
+.@item = 50003;
+.@rate = 500;
+
+.@countitem = countitem( .@item );
+mes "ระบบแลก Cash Point ด้วย Coin";
+mes "เมื่อท่านกดแลกแล้ว Point จะเข้าตัวทันที";
+mes "สามารถเช็ดได้ที่ Cash Shop";
+mes "=================";
+mes "ต้องการแลก "+.@countitem+" x "+getitemname( .@item )+" เป็น "+( .@countitem * .@rate )+" Point หรือไม่ ?";
+next;
+if( .@countitem )
+	if( select( "YES","Cancel" ) == 1 ){
+		delitem .@item,.@countitem;
+		#CASHPOINTS = #CASHPOINTS + ( .@countitem * .@rate );
+		mes "ระบบแลก Cash Point ด้วย Coin";
+		mes "=================";
+		mes "เรียบร้อย~";
+	}
+close;
+}
+
+function	script	Cashcoins4	{
+.@item = 50004;
+.@rate = 5;
+
+.@countitem = countitem( .@item );
+mes "ระบบแลก Cash Point ด้วย Coin";
+mes "เมื่อท่านกดแลกแล้ว Point จะเข้าตัวทันที";
+mes "สามารถเช็ดได้ที่ Cash Shop";
+mes "=================";
+mes "ต้องการแลก "+.@countitem+" x "+getitemname( .@item )+" เป็น "+( .@countitem * .@rate )+" Point หรือไม่ ?";
+next;
+if( .@countitem )
+	if( select( "YES","Cancel" ) == 1 ){
+		delitem .@item,.@countitem;
+		#CASHPOINTS = #CASHPOINTS + ( .@countitem * .@rate );
+		mes "ระบบแลก Cash Point ด้วย Coin";
+		mes "=================";
+		mes "เรียบร้อย~";
+	}
+close;
+}

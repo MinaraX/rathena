@@ -1,0 +1,35 @@
+function	script	EGG01	{
+	
+	setarray .i1[1],12796,12710,14614,13534,13811,14600; // ไอเท็มทั่วไป
+	set .i1rand,rand(1,6); // ระบุบจำนวนไอเท็มด้วย
+	
+	setarray .i2[1],18694,18652,5786,5379,5405,24090,24098,24097,24091,24092,24095,24096; // ไอเท็มแร่
+	set .i2rand,rand(1,12); // ระบุบจำนวนไอเท็มด้วย
+	
+	setarray .i3[1],31616,19540,20285,20316,31318; // ไอเท็มโครตแร่
+	set .i3rand,rand(1,5); // ระบุบจำนวนไอเท็มด้วย
+	
+	set .chance, rand(100);
+
+		// Rate ไอเท็มโครตแร่ 2%	
+		if (.chance == 2){
+		getitem .i3[.i3rand],1;
+		announce " ยินดีกับคุณ ["+strcharinfo(0)+"] ได้รับ Coustom ["+getitemname(.i3[.i3rand])+"] จาก Sleep Sheep Eggs.",0;
+		end;
+		} 
+
+		// Rate แร่ไอเท็ม 5%
+		else if (.chance == 5){
+		getitem .i2[.i2rand],1;
+		announce "ยินดีกับคุณ ["+strcharinfo(0)+"] ได้รับ แร่ไอเท็ม ["+getitemname(.i2[.i2rand])+"] จาก Sleep Sheep Eggs.",0;
+		end;
+		} 
+
+		// Rate ไอเท็มทั่วไป
+		else {
+		getitem .i1[.i1rand],1;
+		end; 
+		}
+		
+	end;
+}

@@ -1,0 +1,14 @@
+-	script	login	-1,{
+
+OnPCLoginEvent:
+	if(getgmlevel() == 0){
+	
+		announce "ประกาศ : ยินดีต้อนรับ "+strcharinfo(0)+" เข้าสู่ Hardcore-RO",0;
+		
+	}else if (getgmlevel() == 99){
+	
+		announce "ประกาศ : "+strcharinfo(0)+" ได้ออนไลน์แล้ว สามารถติดต่อหรือแจ้งปัญหาได้แล้วค่ะ",0;
+	
+	}
+	end;
+}

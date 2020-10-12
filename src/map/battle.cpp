@@ -9007,6 +9007,7 @@ static const struct _battle_data {
 	{ "ping_timer_inverval",                &battle_config.ping_timer_interval,             30,     0,      99999999,       },
 	{ "ping_time",                          &battle_config.ping_time,                       20,     0,      99999999,       },
 	{ "show_skill_scale",                   &battle_config.show_skill_scale,                1,      0,      1,              },
+	{ "feature.refineui",                   &battle_config.feature_refineui,                3,      0,      3,              },
 	{ "achievement_mob_share",              &battle_config.achievement_mob_share,           0,      0,      1,              },
 	{ "slave_stick_with_master",            &battle_config.slave_stick_with_master,         0,      0,      1,              },
 	{ "at_logout_event",                    &battle_config.at_logout_event,                 1,      0,      1,              },
