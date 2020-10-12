@@ -6552,6 +6552,8 @@ int pc_jobid2mapid(unsigned short b_class)
 		case JOB_BABY_GENETIC:          return MAPID_BABY_GENETIC;
 		case JOB_BABY_SHADOW_CHASER:    return MAPID_BABY_SHADOW_CHASER;
 		case JOB_BABY_SOUL_REAPER:      return MAPID_BABY_SOUL_REAPER;
+	// Job 4th
+		case JOB_DRAGON_KNIGHT:			return MAPID_DRAGON_KNIGHT;
 	//Doram Jobs
 		case JOB_SUMMONER:              return MAPID_SUMMONER;
 		default:
@@ -6703,6 +6705,8 @@ int pc_mapid2jobid(unsigned short class_, int sex)
 		case MAPID_BABY_GENETIC:          return JOB_BABY_GENETIC;
 		case MAPID_BABY_SHADOW_CHASER:    return JOB_BABY_SHADOW_CHASER;
 		case MAPID_BABY_SOUL_REAPER:      return JOB_BABY_SOUL_REAPER;
+	// Jobs 4th
+		case MAPID_DRAGON_KNIGHT:		  return JOB_DRAGON_KNIGHT;
 	//Doram Jobs
 		case MAPID_SUMMONER:              return JOB_SUMMONER;
 		default:
@@ -6963,6 +6967,9 @@ const char* job_name(int class_)
 
 	case JOB_BABY_STAR_EMPEROR2:
 		return msg_txt(NULL,784);
+
+	case JOB_DRAGON_KNIGHT:
+		return msg_txt(NULL,800 - JOB_DRAGON_KNIGHT + class_);
 
 	default:
 		return msg_txt(NULL,655);

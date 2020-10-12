@@ -219,6 +219,8 @@ enum e_mapid {
 	MAPID_BABY_GENETIC,
 	MAPID_BABY_SHADOW_CHASER,
 	MAPID_BABY_SOUL_REAPER,
+// Job 4th
+	MAPID_DRAGON_KNIGHT,
 };
 
 //Max size for inputs to Graffiti, Talkie Box and Vending text prompts

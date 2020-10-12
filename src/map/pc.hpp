@@ -1010,6 +1010,7 @@ short pc_maxaspd(struct map_session_data *sd);
 	( (class_) >= JOB_KAGEROU				&& (class_) <= JOB_OBORO          ) || \
 	  (class_) == JOB_REBELLION				|| (class_) == JOB_SUMMONER         || \
 	  (class_) == JOB_BABY_SUMMONER			|| \
+	  (class_) == JOB_DRAGON_KNIGHT			|| \
 	( (class_) >= JOB_BABY_NINJA			&& (class_) <= JOB_BABY_REBELLION ) || \
 	( (class_) >= JOB_BABY_STAR_GLADIATOR2	&& (class_) <= JOB_BABY_STAR_EMPEROR2 ) \
 )

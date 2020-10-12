@@ -322,6 +322,9 @@ const char* job_name(int class_) {
 		case JOB_BABY_STAR_EMPEROR2:
 			return msg_txt(120);
 
+		case JOB_DRAGON_KNIGHT:
+			return msg_txt(122 - JOB_DRAGON_KNIGHT+class_);
+
 		default:
 			return msg_txt(199);
 	}

@@ -229,6 +229,8 @@
 	export_constant(JOB_STAR_EMPEROR2);
 	export_constant(JOB_BABY_STAR_EMPEROR2);
 
+	export_constant(JOB_DRAGON_KNIGHT);
+
 	/* EA jobs */
 	export_constant2("EAJL_2_1",JOBL_2_1);
 	export_constant2("EAJL_2_2",JOBL_2_2);
@@ -383,6 +385,8 @@
 	export_constant2("EAJ_SUPER_BABY_E",MAPID_SUPER_BABY_E);
 
 	export_constant2("EAJ_SUMMONER",MAPID_SUMMONER);
+
+	export_constant2("DRAGON_KNIGHT", MAPID_DRAGON_KNIGHT);
 
 	/* sex */
 	export_constant(SEX_FEMALE);
