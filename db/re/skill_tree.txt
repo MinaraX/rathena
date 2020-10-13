@@ -6584,6 +6584,7 @@
 4244,409,1,0,0,0,0,0,0,0,0,0,0 //WE_CALLPARENT#Call Parent#
 4244,5065,1,0,0,0,0,0,0,0,0,0,0 //WE_CHEERUP#Cheer Up#
 
+//Dragon Knight 
 4252,1,9,0,0,0,0,0,0,0,0,0,0 //NV_BASIC#Basic Skill#
 4252,142,1,0,0,0,0,0,0,0,0,0,0 //NV_FIRSTAID#First Aid#
 4252,2,10,0,0,0,0,0,0,0,0,0,0 //SM_SWORD#Sword Mastery#
@@ -6630,3 +6631,5 @@
 4252,2020,5,57,2,0,0,0,0,0,0,0,0 //RK_PHANTOMTHRUST#Phantom Thrust#
 4252,5004,10,2007,2,0,0,0,0,0,0,0,0 //RK_DRAGONBREATH_WATER#Dragon Breath(Water)#
 4252,5014,5,0,0,0,0,0,0,0,0,0,0 //ALL_FULL_THROTTLE#Full Throttle#
+
+4252,5201,5,0,0,0,0,0,0,0,0,0,0 //DK_SERVANTWEAPON#Servant Weapon#
