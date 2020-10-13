@@ -1010,7 +1010,18 @@ short pc_maxaspd(struct map_session_data *sd);
 	( (class_) >= JOB_KAGEROU				&& (class_) <= JOB_OBORO          ) || \
 	  (class_) == JOB_REBELLION				|| (class_) == JOB_SUMMONER         || \
 	  (class_) == JOB_BABY_SUMMONER			|| \
-	  (class_) == JOB_DRAGON_KNIGHT			|| \
+	  (class_) == JOB_MEISTER				|| \
+	  (class_) == JOB_SHADOW_CROSS			|| \
+	  (class_) == JOB_ARCH_MAGE				|| \
+	  (class_) == JOB_CARDINAL				|| \
+	  (class_) == JOB_WINDHAWK			    || \
+	  (class_) == JOB_IMPERIAL_GUARD		|| \
+	  (class_) == JOB_BIOLO			        || \
+	  (class_) == JOB_ABYSS_CHASER			|| \
+	  (class_) == JOB_ELEMENTAL_MASTER		|| \
+	  (class_) == JOB_INQUISITOR			|| \
+	  (class_) == JOB_TROUBADOUR			|| \
+	  (class_) == JOB_TROUVERE			    || \
 	( (class_) >= JOB_BABY_NINJA			&& (class_) <= JOB_BABY_REBELLION ) || \
 	( (class_) >= JOB_BABY_STAR_GLADIATOR2	&& (class_) <= JOB_BABY_STAR_EMPEROR2 ) \
 )

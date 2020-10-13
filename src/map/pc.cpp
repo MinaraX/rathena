@@ -6552,8 +6552,21 @@ int pc_jobid2mapid(unsigned short b_class)
 		case JOB_BABY_GENETIC:          return MAPID_BABY_GENETIC;
 		case JOB_BABY_SHADOW_CHASER:    return MAPID_BABY_SHADOW_CHASER;
 		case JOB_BABY_SOUL_REAPER:      return MAPID_BABY_SOUL_REAPER;
-	// Job 4th
+	// Job 4-1
 		case JOB_DRAGON_KNIGHT:			return MAPID_DRAGON_KNIGHT;
+		case JOB_SHADOW_CROSS:			return MAPID_SHADOW_CROSS;
+		case JOB_MEISTER:				return MAPID_MEISTER;
+		case JOB_ARCH_MAGE:				return MAPID_ARCH_MAGE;
+		case JOB_CARDINAL:				return MAPID_CARDINAL;
+		case JOB_WINDHAWK:				return MAPID_WINDHAWK;
+	// Job 4-2
+		case JOB_IMPERIAL_GUARD:		return MAPID_IMPERIAL_GUARD;
+		case JOB_BIOLO:					return MAPID_BIOLO;
+		case JOB_ABYSS_CHASER:			return MAPID_ABYSS_CHASER;
+		case JOB_ELEMENTAL_MASTER:		return MAPID_ELEMENTAL_MASTER;
+		case JOB_INQUISITOR:			return MAPID_INQUISITOR;
+		case JOB_TROUBADOUR:			return MAPID_TROUBADOUR;
+		case JOB_TROUVERE:				return MAPID_TROUVERE;
 	//Doram Jobs
 		case JOB_SUMMONER:              return MAPID_SUMMONER;
 		default:
@@ -6705,8 +6718,21 @@ int pc_mapid2jobid(unsigned short class_, int sex)
 		case MAPID_BABY_GENETIC:          return JOB_BABY_GENETIC;
 		case MAPID_BABY_SHADOW_CHASER:    return JOB_BABY_SHADOW_CHASER;
 		case MAPID_BABY_SOUL_REAPER:      return JOB_BABY_SOUL_REAPER;
-	// Jobs 4th
+	// Job 4-1
 		case MAPID_DRAGON_KNIGHT:		  return JOB_DRAGON_KNIGHT;
+		case MAPID_SHADOW_CROSS:		  return JOB_SHADOW_CROSS;
+		case MAPID_MEISTER:				  return JOB_MEISTER;
+		case MAPID_ARCH_MAGE:			  return JOB_ARCH_MAGE;
+		case MAPID_CARDINAL:			  return JOB_CARDINAL;
+		case MAPID_WINDHAWK:			  return JOB_WINDHAWK;
+	// Job 4-2
+		case MAPID_IMPERIAL_GUARD:		  return JOB_IMPERIAL_GUARD;
+		case MAPID_BIOLO:				  return JOB_BIOLO;
+		case MAPID_ABYSS_CHASER:		  return JOB_ABYSS_CHASER;
+		case MAPID_ELEMENTAL_MASTER:	  return JOB_ELEMENTAL_MASTER;
+		case MAPID_INQUISITOR:			  return JOB_INQUISITOR;
+		case MAPID_TROUBADOUR:			  return JOB_TROUBADOUR;
+		case MAPID_TROUVERE:			  return JOB_TROUVERE;
 	//Doram Jobs
 		case MAPID_SUMMONER:              return JOB_SUMMONER;
 		default:
