@@ -6995,7 +6995,19 @@ const char* job_name(int class_)
 		return msg_txt(NULL,784);
 
 	case JOB_DRAGON_KNIGHT:
-		return msg_txt(NULL,800 - JOB_DRAGON_KNIGHT + class_);
+	case JOB_MEISTER:
+	case JOB_SHADOW_CROSS:
+	case JOB_ARCH_MAGE:
+	case JOB_CARDINAL:
+	case JOB_WINDHAWK:
+	case JOB_IMPERIAL_GUARD:
+	case JOB_BIOLO:
+	case JOB_ABYSS_CHASER:
+	case JOB_ELEMENTAL_MASTER:
+	case JOB_INQUISITOR:
+	case JOB_TROUBADOUR:
+	case JOB_TROUVERE:
+		return msg_txt(NULL,801 - JOB_DRAGON_KNIGHT + class_);
 
 	default:
 		return msg_txt(NULL,655);

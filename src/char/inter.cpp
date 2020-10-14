@@ -330,6 +330,15 @@ const char* job_name(int class_) {
 		case JOB_WINDHAWK:
 			return msg_txt(122 - JOB_DRAGON_KNIGHT+class_);
 
+		case JOB_IMPERIAL_GUARD:
+		case JOB_BIOLO:
+		case JOB_ABYSS_CHASER:
+		case JOB_ELEMENTAL_MASTER:
+		case JOB_INQUISITOR:
+		case JOB_TROUBADOUR:
+		case JOB_TROUVERE:
+			return msg_txt(127 - JOB_IMPERIAL_GUARD + class_);
+
 
 		default:
 			return msg_txt(199);
