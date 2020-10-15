@@ -13135,6 +13135,7 @@ short pc_maxparameter(struct map_session_data *sd, enum e_params param) {
 		}
 	}
 
+
 	// Transcendent
 	if( class_ & JOBL_UPPER ){
 		return battle_config.max_trans_parameter;
