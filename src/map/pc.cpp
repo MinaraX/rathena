@@ -6565,8 +6565,8 @@ int pc_jobid2mapid(unsigned short b_class)
 		case JOB_ABYSS_CHASER:			return MAPID_ABYSS_CHASER;
 		case JOB_ELEMENTAL_MASTER:		return MAPID_ELEMENTAL_MASTER;
 		case JOB_INQUISITOR:			return MAPID_INQUISITOR;
-		case JOB_TROUBADOUR:			return MAPID_TROUBADOUR;
-		case JOB_TROUVERE:				return MAPID_TROUVERE;
+		case JOB_TROUBADOUR:			
+		case JOB_TROUVERE:				return MAPID_TROUBADOURTROUVERE;
 	//Doram Jobs
 		case JOB_SUMMONER:              return MAPID_SUMMONER;
 		default:
@@ -6731,8 +6731,7 @@ int pc_mapid2jobid(unsigned short class_, int sex)
 		case MAPID_ABYSS_CHASER:		  return JOB_ABYSS_CHASER;
 		case MAPID_ELEMENTAL_MASTER:	  return JOB_ELEMENTAL_MASTER;
 		case MAPID_INQUISITOR:			  return JOB_INQUISITOR;
-		case MAPID_TROUBADOUR:			  return JOB_TROUBADOUR;
-		case MAPID_TROUVERE:			  return JOB_TROUVERE;
+		case MAPID_TROUBADOURTROUVERE:	  return sex?JOB_TROUBADOUR:JOB_TROUVERE;
 	//Doram Jobs
 		case MAPID_SUMMONER:              return JOB_SUMMONER;
 		default:

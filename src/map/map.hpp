@@ -232,8 +232,7 @@ enum e_mapid {
 	MAPID_ABYSS_CHASER,
 	MAPID_ELEMENTAL_MASTER,
 	MAPID_INQUISITOR,
-	MAPID_TROUBADOUR,
-	MAPID_TROUVERE,
+	MAPID_TROUBADOURTROUVERE,
 };
 
 //Max size for inputs to Graffiti, Talkie Box and Vending text prompts
